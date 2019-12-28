@@ -9,10 +9,21 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-154870707-1');
-</script>  
+</script>
+<script>
+funtion send(){
+gtag("event", "觀看影片", {
+	"event_category": "首頁",
+	"event_label": "宣傳片一",
+"value": 10
+});
+alert("事件已送出");
+}
+</script>
 </head>
 <body>
   <h3>Website for GA</h3>
   <div>Hello Google Analytics</div>
+  <button onclick="send();">點我</button>
 </body>
 </html>
